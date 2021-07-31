@@ -1,7 +1,7 @@
 # Linux-Starter-Script
 
 
-A Simple script for bootstraping your linux experience and development environment!
+A Simple script for bootstraping your development and linux experience!
 
 This includes:
 
