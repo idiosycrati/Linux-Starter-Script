@@ -3,7 +3,7 @@
 declare -a c;
 
 
-ins=("Utilities" "VSCode" "Atom" "Discord")
+ins=("Utilities" "VSCode" "Atom" "Discord" "Postman" "Chrome")
 
 printf "Choose installers: e.g. 1,2,3,4\n";
 
@@ -98,7 +98,7 @@ for i in "${c[@]}"; do
             echo "\nINSTALLING Discord...\n";
 
             wget -O ~/discord.deb "https://discordapp.com/api/download?platform=linux&format=deb";
-          
+             echo $p | sudo -kS dpkg -i *.deb;
 
 
         elif [ $i = "5" ]
@@ -106,7 +106,7 @@ for i in "${c[@]}"; do
             echo "\nINSTALLING Postman...\n";
             
             wget -O ~/postman.tar.gz "https://dl.pstmn.io/download/latest/linux64";       
-            echo $p | sudo -kS dpkg -i *.deb;
+         
 
         
         elif [ $i = "6" ]
@@ -114,9 +114,9 @@ for i in "${c[@]}"; do
 
             echo "\nINSTALLING Chrome...\n";
 
-            echo $p | sudo -kS dpkg -i *.deb;
+            
             wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb;
-
+            echo $p | sudo -kS dpkg -i *.deb;
 
         cd;
         rm -r installers;
