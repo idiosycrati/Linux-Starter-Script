@@ -3,6 +3,12 @@
 
 A Simple script for bootstraping your linux experience and development environment!
 
+This includes:
+
+Utilities: glances, psensor, tilda, terminator, dconf-editor, gnome-tweak-tool, alacarte, curl, gdebi-core wget;
+
+Softwares: Chrome, VSCode, Atom, Discord, Postman 
+
 
 # How to Run
 
